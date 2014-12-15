@@ -1,0 +1,11 @@
+<h1>This is posts#new</h1>
+
+<%= form_tag(user_posts_path, method: 'post') do %>
+	<%= label_tag(:title, 'Title:') %>
+	<%= text_field_tag(:title) %>
+	<br>
+	<%= label_tag(:body, 'Body:') %>
+	<%= text_field_tag(:body) %>
+	<br>
+	<%= submit_tag('Submit') %>
+<% end %>

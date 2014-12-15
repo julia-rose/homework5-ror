@@ -1,0 +1,14 @@
+<h1>This is users#index</h1>
+
+<% @users.each do |user| %>
+	<%= user.username %>
+	<br>
+<% end %>
+
+<p>Already have an account? 
+	<%= link_to 'Login', new_session_path %>
+</p>
+
+<p>Don't have an account?
+	<%= link_to 'Sign up', new_user_path %>
+</p>
